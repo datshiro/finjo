@@ -1,0 +1,24 @@
+app = "finjo-bot"
+primary_region = "sin"  # Singapore — closest to Vietnam
+
+[build]
+  builder = "heroku/buildpacks:20"
+
+[env]
+  PORT = "3000"
+  NODE_ENV = "production"
+
+[[services]]
+  internal_port = 3000
+  protocol = "tcp"
+
+  [[services.ports]]
+    handlers = ["http"]
+    port = 80
+
+  [[services.ports]]
+    handlers = ["tls", "http"]
+    port = 443
+
+[deploy]
+  min_machines_running = 1

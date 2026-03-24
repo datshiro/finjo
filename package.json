@@ -1,0 +1,30 @@
+{
+  "name": "finjo",
+  "version": "1.0.0",
+  "description": "Vietnamese expense tracking Telegram bot",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "eval": "tsx eval/run-evals.ts",
+    "dev:local": "dotenv -e .env -e .env.local -- tsx watch src/index.ts"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.21.0",
+    "@supabase/supabase-js": "^2.47.0",
+    "grammy": "^1.31.0",
+    "luxon": "^3.5.0",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "@types/luxon": "^3.4.0",
+    "@types/node": "^22.10.0",
+    "dotenv-cli": "^8.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0",
+    "vitest": "^2.1.0"
+  }
+}
