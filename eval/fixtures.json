@@ -1,0 +1,146 @@
+[
+  {
+    "input": "cafe sáng 45k",
+    "expected": {
+      "amount_dong": 45000,
+      "category": "food",
+      "description_contains": "cafe"
+    }
+  },
+  {
+    "input": "Grab về nhà 85 nghìn",
+    "expected": {
+      "amount_dong": 85000,
+      "category": "transport",
+      "merchant_contains": "Grab"
+    }
+  },
+  {
+    "input": "ăn trưa bún bò 60k",
+    "expected": {
+      "amount_dong": 60000,
+      "category": "food",
+      "description_contains": "bún bò"
+    }
+  },
+  {
+    "input": "mua thuốc 150k",
+    "expected": {
+      "amount_dong": 150000,
+      "category": "health"
+    }
+  },
+  {
+    "input": "xem phim 120k",
+    "expected": {
+      "amount_dong": 120000,
+      "category": "entertainment"
+    }
+  },
+  {
+    "input": "tiền điện tháng này 500k",
+    "expected": {
+      "amount_dong": 500000,
+      "category": "utilities"
+    }
+  },
+  {
+    "input": "cafe 1.5tr",
+    "expected": {
+      "amount_dong": 1500000,
+      "category": "food",
+      "description_contains": "cafe"
+    }
+  },
+  {
+    "input": "Grab 30k",
+    "expected": {
+      "amount_dong": 30000,
+      "category": "transport",
+      "merchant_contains": "Grab"
+    }
+  },
+  {
+    "input": "parking 5 nghìn",
+    "expected": {
+      "amount_dong": 5000,
+      "category": "transport"
+    }
+  },
+  {
+    "input": "ăn sáng bánh mì 25k hôm qua",
+    "expected": {
+      "amount_dong": 25000,
+      "category": "food",
+      "description_contains": "bánh mì",
+      "date_is_yesterday": true
+    }
+  },
+  {
+    "input": "shopping quần áo 800k",
+    "expected": {
+      "amount_dong": 800000,
+      "category": "shopping"
+    }
+  },
+  {
+    "input": "Hello",
+    "expected": {
+      "error": "not_an_expense"
+    }
+  },
+  {
+    "input": "50 USD lunch",
+    "expected": {
+      "error": "currency_not_supported"
+    }
+  },
+  {
+    "input": "mua gì đó",
+    "expected": {
+      "error": "needs_clarification"
+    }
+  },
+  {
+    "input": "tiền nhà tháng 4 triệu",
+    "expected": {
+      "amount_dong": 4000000,
+      "category": "housing"
+    }
+  },
+  {
+    "input": "bữa tối với gia đình 350k",
+    "expected": {
+      "amount_dong": 350000,
+      "category": "food"
+    }
+  },
+  {
+    "input": "xe ôm 15k",
+    "expected": {
+      "amount_dong": 15000,
+      "category": "transport"
+    }
+  },
+  {
+    "input": "khám bệnh viện 200k",
+    "expected": {
+      "amount_dong": 200000,
+      "category": "health"
+    }
+  },
+  {
+    "input": "mua sách 120k",
+    "expected": {
+      "amount_dong": 120000,
+      "category": "shopping"
+    }
+  },
+  {
+    "input": "nước uống 10k",
+    "expected": {
+      "amount_dong": 10000,
+      "category": "food"
+    }
+  }
+]
